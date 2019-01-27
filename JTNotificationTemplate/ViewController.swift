@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import UserNotifications
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     
     let button : UIButton = UIButton.init(frame: CGRect.zero)
+    let notificationCenter : UNUserNotificationCenter = UNUserNotificationCenter.current()
     
     override func viewDidLoad() {
         super.viewDidLoad()
