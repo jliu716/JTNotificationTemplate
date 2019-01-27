@@ -40,7 +40,25 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     }
     
     @objc func checkPermission(){
-
+        notificationCenter.getNotificationSettings { (settings) in
+            if(settings.authorizationStatus != .authorized){
+                self.requestPermission()
+            }else{
+                // fire some testing notification
+            }
+        }
+    }
+    
+    func requestPermission(){
+        // define what do you need permission to use
+        let options: UNAuthorizationOptions = [.alert, .sound]
+        
+        // request permission
+        notificationCenter.requestAuthorization(options: options) { (granted, error) in
+            if !granted {
+                print("Permission not granted")
+            }
+        }
     }
     
 }
