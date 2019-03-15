@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84B28118223A25D10043CADF /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B28117223A25D10043CADF /* NotificationService.swift */; };
+		84B2811C223A25D10043CADF /* JLTestAlertServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 84B28115223A25D10043CADF /* JLTestAlertServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		84B28128223A28160043CADF /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B28127223A28160043CADF /* UserNotifications.framework */; };
+		84B2812A223A28160043CADF /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B28129223A28160043CADF /* UserNotificationsUI.framework */; };
+		84B2812D223A28160043CADF /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B2812C223A28160043CADF /* NotificationViewController.swift */; };
+		84B28130223A28160043CADF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B2812E223A28160043CADF /* MainInterface.storyboard */; };
+		84B28134223A28160043CADF /* JLAlertContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 84B28125223A28160043CADF /* JLAlertContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		84B8ECF421FE5A3200D96FCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8ECF321FE5A3200D96FCC /* AppDelegate.swift */; };
 		84B8ECF621FE5A3200D96FCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B8ECF521FE5A3200D96FCC /* ViewController.swift */; };
 		84B8ECF921FE5A3200D96FCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B8ECF721FE5A3200D96FCC /* Main.storyboard */; };
@@ -17,6 +24,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		84B2811A223A25D10043CADF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84B8ECE821FE5A3200D96FCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84B28114223A25D10043CADF;
+			remoteInfo = JLTestAlertServiceExtension;
+		};
+		84B28132223A28160043CADF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84B8ECE821FE5A3200D96FCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84B28124223A28160043CADF;
+			remoteInfo = JLAlertContentExtension;
+		};
 		84B8ED0521FE5A3300D96FCC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 84B8ECE821FE5A3200D96FCC /* Project object */;
@@ -33,7 +54,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		84B28120223A25D10043CADF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				84B2811C223A25D10043CADF /* JLTestAlertServiceExtension.appex in Embed App Extensions */,
+				84B28134223A28160043CADF /* JLAlertContentExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		84B28115223A25D10043CADF /* JLTestAlertServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JLTestAlertServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B28117223A25D10043CADF /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		84B28119223A25D10043CADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B28125223A28160043CADF /* JLAlertContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JLAlertContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B28127223A28160043CADF /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		84B28129223A28160043CADF /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		84B2812C223A28160043CADF /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		84B2812F223A28160043CADF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		84B28131223A28160043CADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84B8ECF021FE5A3200D96FCC /* JTNotificationTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JTNotificationTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B8ECF321FE5A3200D96FCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B8ECF521FE5A3200D96FCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +95,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		84B28112223A25D10043CADF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B28122223A28160043CADF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B2812A223A28160043CADF /* UserNotificationsUI.framework in Frameworks */,
+				84B28128223A28160043CADF /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84B8ECED21FE5A3200D96FCC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -74,12 +135,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84B28116223A25D10043CADF /* JLTestAlertServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				84B28117223A25D10043CADF /* NotificationService.swift */,
+				84B28119223A25D10043CADF /* Info.plist */,
+			);
+			path = JLTestAlertServiceExtension;
+			sourceTree = "<group>";
+		};
+		84B28126223A28160043CADF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84B28127223A28160043CADF /* UserNotifications.framework */,
+				84B28129223A28160043CADF /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84B2812B223A28160043CADF /* JLAlertContentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				84B2812C223A28160043CADF /* NotificationViewController.swift */,
+				84B2812E223A28160043CADF /* MainInterface.storyboard */,
+				84B28131223A28160043CADF /* Info.plist */,
+			);
+			path = JLAlertContentExtension;
+			sourceTree = "<group>";
+		};
 		84B8ECE721FE5A3200D96FCC = {
 			isa = PBXGroup;
 			children = (
 				84B8ECF221FE5A3200D96FCC /* JTNotificationTemplate */,
 				84B8ED0721FE5A3300D96FCC /* JTNotificationTemplateTests */,
 				84B8ED1221FE5A3400D96FCC /* JTNotificationTemplateUITests */,
+				84B28116223A25D10043CADF /* JLTestAlertServiceExtension */,
+				84B2812B223A28160043CADF /* JLAlertContentExtension */,
+				84B28126223A28160043CADF /* Frameworks */,
 				84B8ECF121FE5A3200D96FCC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +182,8 @@
 				84B8ECF021FE5A3200D96FCC /* JTNotificationTemplate.app */,
 				84B8ED0421FE5A3300D96FCC /* JTNotificationTemplateTests.xctest */,
 				84B8ED0F21FE5A3400D96FCC /* JTNotificationTemplateUITests.xctest */,
+				84B28115223A25D10043CADF /* JLTestAlertServiceExtension.appex */,
+				84B28125223A28160043CADF /* JLAlertContentExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +222,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		84B28114223A25D10043CADF /* JLTestAlertServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B2811F223A25D10043CADF /* Build configuration list for PBXNativeTarget "JLTestAlertServiceExtension" */;
+			buildPhases = (
+				84B28111223A25D10043CADF /* Sources */,
+				84B28112223A25D10043CADF /* Frameworks */,
+				84B28113223A25D10043CADF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JLTestAlertServiceExtension;
+			productName = JLTestAlertServiceExtension;
+			productReference = 84B28115223A25D10043CADF /* JLTestAlertServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		84B28124223A28160043CADF /* JLAlertContentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B28135223A28160043CADF /* Build configuration list for PBXNativeTarget "JLAlertContentExtension" */;
+			buildPhases = (
+				84B28121223A28160043CADF /* Sources */,
+				84B28122223A28160043CADF /* Frameworks */,
+				84B28123223A28160043CADF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JLAlertContentExtension;
+			productName = JLAlertContentExtension;
+			productReference = 84B28125223A28160043CADF /* JLAlertContentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		84B8ECEF21FE5A3200D96FCC /* JTNotificationTemplate */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84B8ED1821FE5A3400D96FCC /* Build configuration list for PBXNativeTarget "JTNotificationTemplate" */;
@@ -135,10 +263,13 @@
 				84B8ECEC21FE5A3200D96FCC /* Sources */,
 				84B8ECED21FE5A3200D96FCC /* Frameworks */,
 				84B8ECEE21FE5A3200D96FCC /* Resources */,
+				84B28120223A25D10043CADF /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				84B2811B223A25D10043CADF /* PBXTargetDependency */,
+				84B28133223A28160043CADF /* PBXTargetDependency */,
 			);
 			name = JTNotificationTemplate;
 			productName = JTNotificationTemplate;
@@ -191,6 +322,12 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Jiayi Liu";
 				TargetAttributes = {
+					84B28114223A25D10043CADF = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					84B28124223A28160043CADF = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					84B8ECEF21FE5A3200D96FCC = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -220,11 +357,28 @@
 				84B8ECEF21FE5A3200D96FCC /* JTNotificationTemplate */,
 				84B8ED0321FE5A3300D96FCC /* JTNotificationTemplateTests */,
 				84B8ED0E21FE5A3400D96FCC /* JTNotificationTemplateUITests */,
+				84B28114223A25D10043CADF /* JLTestAlertServiceExtension */,
+				84B28124223A28160043CADF /* JLAlertContentExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		84B28113223A25D10043CADF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B28123223A28160043CADF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B28130223A28160043CADF /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84B8ECEE21FE5A3200D96FCC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -252,6 +406,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		84B28111223A25D10043CADF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B28118223A25D10043CADF /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B28121223A28160043CADF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B2812D223A28160043CADF /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84B8ECEC21FE5A3200D96FCC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -280,6 +450,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		84B2811B223A25D10043CADF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84B28114223A25D10043CADF /* JLTestAlertServiceExtension */;
+			targetProxy = 84B2811A223A25D10043CADF /* PBXContainerItemProxy */;
+		};
+		84B28133223A28160043CADF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84B28124223A28160043CADF /* JLAlertContentExtension */;
+			targetProxy = 84B28132223A28160043CADF /* PBXContainerItemProxy */;
+		};
 		84B8ED0621FE5A3300D96FCC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 84B8ECEF21FE5A3200D96FCC /* JTNotificationTemplate */;
@@ -293,6 +473,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		84B2812E223A28160043CADF /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84B2812F223A28160043CADF /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		84B8ECF721FE5A3200D96FCC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -312,6 +500,86 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		84B2811D223A25D10043CADF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P63G99DJVM;
+				INFOPLIST_FILE = JLTestAlertServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiayil.JTNotificationTemplate.JLTestAlertServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84B2811E223A25D10043CADF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P63G99DJVM;
+				INFOPLIST_FILE = JLTestAlertServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiayil.JTNotificationTemplate.JLTestAlertServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84B28136223A28160043CADF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P63G99DJVM;
+				INFOPLIST_FILE = JLAlertContentExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiayil.JTNotificationTemplate.JLAlertContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84B28137223A28160043CADF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P63G99DJVM;
+				INFOPLIST_FILE = JLAlertContentExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiayil.JTNotificationTemplate.JLAlertContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		84B8ED1621FE5A3400D96FCC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -363,7 +631,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -418,7 +686,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -431,10 +699,12 @@
 		84B8ED1921FE5A3400D96FCC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P63G99DJVM;
 				INFOPLIST_FILE = JTNotificationTemplate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,10 +719,12 @@
 		84B8ED1A21FE5A3400D96FCC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P63G99DJVM;
 				INFOPLIST_FILE = JTNotificationTemplate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -549,6 +821,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		84B2811F223A25D10043CADF /* Build configuration list for PBXNativeTarget "JLTestAlertServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B2811D223A25D10043CADF /* Debug */,
+				84B2811E223A25D10043CADF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84B28135223A28160043CADF /* Build configuration list for PBXNativeTarget "JLAlertContentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B28136223A28160043CADF /* Debug */,
+				84B28137223A28160043CADF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		84B8ECEB21FE5A3200D96FCC /* Build configuration list for PBXProject "JTNotificationTemplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
